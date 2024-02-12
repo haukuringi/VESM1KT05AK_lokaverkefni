@@ -1,1 +1,1 @@
-# VESM1KT05AK_lokaverkefni
+# VESM1KT05AK_lokaverkefni repository

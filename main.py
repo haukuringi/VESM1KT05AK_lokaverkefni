@@ -44,28 +44,19 @@ lives = 3
 
 while True:
 
-    
-
-    while lives > 0:
-
-        if Pin3.value() == 1:
-            Pin1.value(1)
-            Pin2.value(1)
-            sleep(200)
-            lives = lives -1
-            Pin1.value(0)
-            Pin2.value(0)
-            
-
-        else:
-            Pin2.value(1)
-            Pin1.value(0)
-            Pin3.value(0)
-            lives = 3
-    
-    if button.value() == 0:
-        led.value(1)    
+    if alfpappir.value() == 1:
+        slokkva()
+        pin3.value(1)
+        start = True
         lag()
-       
-    else:
-        led.value(0)   
+        
+        if alfpappir.value() == 0:
+        slokkva()
+        pin2.value(1)
+        start = True
+        lag()
+
+
+
+
+

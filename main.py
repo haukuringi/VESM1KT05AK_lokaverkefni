@@ -1,3 +1,4 @@
+
 from machine import Pin, PWM
 from time import sleep_ms, ticks_ms
 from neopixel import NeoPixel
@@ -13,8 +14,10 @@ led = Pin(led_pin, Pin.OUT)
 
 
 hatalari_passive = PWM(Pin(14), freq=1000)
-Pin2 = Pin(7, Pin.OUT)
-Pin1 = Pin(8, Pin.OUT)
+#pin3=red pin2=græn pin1=gulur
+Pin3 = Pin(12, Pin.OUT)
+Pin2 = Pin(11, Pin.OUT)
+Pin1 = Pin(10, Pin.OUT)
 def lag():
     hatalari_passive.duty(511)
     hatalari_passive.freq(90)
@@ -45,8 +48,9 @@ while True:
 
     while lives > 0:
 
-        if Pin2.value() == 1:
+        if Pin3.value() == 1:
             Pin1.value(1)
+            Pin2.value(1)
             sleep(200)
             lives = lives -1
             Pin1.value(0)
@@ -54,6 +58,9 @@ while True:
             
 
         else:
+            Pin2.value(1)
+            Pin1.value(0)
+            Pin3.value(0)
             lives = 3
     
     if button.value() == 0:

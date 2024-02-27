@@ -7,7 +7,7 @@ neo = NeoPixel(Pin(5),8)
 button_pin = 4  
 led_pin = 5     
 
-Initialize GPIO pins
+
 button = Pin(button_pin, Pin.IN, Pin.PULL_UP)
 led = Pin(led_pin, Pin.OUT)
 
@@ -51,6 +51,7 @@ while True:
             lives = lives -1
             Pin1.value(0)
             Pin2.value(0)
+            
 
         else:
             lives = 3
@@ -62,4 +63,3 @@ while True:
         led.off()   
 
     time.sleep(0.1)       
-

@@ -5,12 +5,6 @@ from neopixel import NeoPixel
 
 neo = NeoPixel(Pin(5),8)
 
-button_pin = 4  
-led_pin = 5     
-
-
-button = Pin(button_pin, Pin.IN, Pin.PULL_UP)
-led = Pin(led_pin, Pin.OUT)
 alpappir = Pin(button_pin, Pin.IN, Pin.PULL_UP)
 
 hatalari_passive = PWM(Pin(14), freq=1000)

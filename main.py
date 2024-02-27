@@ -7,6 +7,7 @@ neo = NeoPixel(Pin(3),8)
 
 
 
+alpappir = Pin(17, Pin.IN, Pin.PULL_UP)
 
 hatalari_passive = PWM(Pin(14), freq=1000)
 #pin3=red pin2=græn pin1=gulur

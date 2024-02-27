@@ -50,13 +50,13 @@ while True:
         start = True
         lag()
         
-        if alfpappir.value() == 0:
+    if alfpappir.value() == 0:
         slokkva()
         pin2.value(1)
         start = True
         lag()
-
-
+        
+    if Pin1.value() == 1:
 
 
 
